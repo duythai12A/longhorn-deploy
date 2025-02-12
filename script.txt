@@ -1,0 +1,3 @@
+helm install longhorn ./longhorn --kube-insecure-skip-tls-verify --namespace dev --kubeconfig ./kubeconf/local.yaml `
+--set metrics.serviceMonitor.enabled=true `
+--set metrics.serviceMonitor.interval=30s 
